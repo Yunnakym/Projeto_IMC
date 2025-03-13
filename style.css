@@ -1,135 +1,137 @@
+/* Zera as margens e o preenchimento da pag*/
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Estiliza o elemento main */
 main {
-    display: flex; /* deixa os elementos flexíveis e podem ser distribuídos de forma mais dinâmica*/
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: center;  /* Centraliza horizontalmente */
-    justify-content: center;  /* Centraliza verticalmente */
-    width: 100%;
-    min-height: 100vh; /*1vh equivale a 1% da altura total da tela.*/
-    background-color: #7bd9e4;
-    padding: 20px; /* O conteúdo fica afastado das bordas, criando um respiro interno*/
-    box-sizing: border-box; /*altera a forma como a largura e a altura de um elemento são calculadas.*/
-    padding-bottom: 10em !important; /*define o espaçamento interno apenas na parte inferior de um elemento.*/
+    display: flex; /* Torna os elementos dentro de main flexíveis, permitindo distribuição dinâmica */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    justify-content: center;  /* Centraliza os itens verticalmente */
+    width: 100%; /* Largura total da tela */
+    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da tela */
+    background-color: #7bd9e4; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box; /* Altera o cálculo de largura e altura para incluir padding e border */
+    padding-bottom: 10em !important; /* Adiciona mais espaço na parte inferior */
 }
 
+/* Estiliza o título */
 .title {
-    background-color: rgb(255, 198, 0);
-    width: 600px !important;
-    height: 50px !important;
-    text-align: center;
-    font: bold 1.5rem serif;
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;/*é usada para arredondar as bordas de um elemento.*/
+    background-color: rgb(255, 198, 0); /* Cor de fundo amarela */
+    width: 600px !important; /* Largura fixa */
+    height: 50px !important; /* Altura fixa */
+    text-align: center; /* Alinha o texto no centro */
+    font: bold 1.5rem serif; /* Define a fonte */
+    display: flex; /* Usado para centralizar o texto dentro da caixa */
+    margin-top: 30px; /* Espaço acima do título */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    border-radius: 15px; /* Bordas arredondadas */
 }
 
+/* Estiliza o container das imagens */
 .images {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px; 
-}   
- 
-.clickable-image {
-    width: 200px; 
-    height: 250px;
-    object-fit: cover; /*mantem a proporção de espaço*/
-    border-radius: 30%;  
+    display: flex; /* Usa o Flexbox para alinhar as imagens */
+    justify-content: center; /* Centraliza as imagens */
+    margin-top: 60px; /* Espaço acima das imagens */
 }
 
+/* Estiliza as imagens que são clicáveis */
+.clickable-image {
+    width: 200px; /* Largura fixa */
+    height: 250px; /* Altura fixa */
+    object-fit: cover; /* A imagem se ajusta ao tamanho do container, mantendo a proporção */
+    border-radius: 30%; /* Bordas arredondadas */
+}
+
+/* Estiliza o container principal */
 .container {
     display: flex;
-    flex-direction: column;/*define a direção em que os itens dentro de um container flexível (display: flex;) serão organizados.*/
-    background: rgb(255, 198, 0) !important;
-    width: 570px !important;
-    height: 700px !important;
-    align-items: center !important;
-    justify-content: space-evenly !important;   /* Garante espaçamento uniforme */
-    border-radius: 20px !important;
-    margin-top: 50px !important;
-    padding: 20px !important; /* Adiciona um pequeno espaço interno */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    background: rgb(255, 198, 0) !important; /* Cor de fundo amarela */
+    width: 570px !important; /* Largura fixa */
+    height: 700px !important; /* Altura fixa */
+    align-items: center !important; /* Centraliza os itens horizontalmente */
+    justify-content: space-evenly !important; /* Garante que os itens fiquem distribuídos igualmente */
+    border-radius: 20px !important; /* Bordas arredondadas */
+    margin-top: 50px !important; /* Espaço acima */
+    padding: 20px !important; /* Espaçamento interno */
 }
 
-.input {
-    display: flex;
-    width: 450px !important;
-    height: 50px !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-}
 
+/* Estiliza o campo de entrada (input) */
 .input input {
-    width: 360px !important;
-    height: 50px !important;
-    border-radius: 9px !important;
-    border: none;
-    outline: 0;
-    font: bold 1.5rem serif !important;
-    text-align: center !important;
+    width: 360px !important; /* Largura do campo de entrada */
+    height: 50px !important; /* Altura do campo */
+    border-radius: 9px !important; /* Bordas arredondadas */
+    border: none; /* Remove a borda pra ficar sem contorno preto dentro do campo (escreva..)*/
+    font: bold 1.5rem serif !important; /* Define a fonte */
+    text-align: center !important; /* Alinha o texto no centro */
 }
 
+/* Estiliza o label do campo de entrada */
 .input label {
-    font: bold 1.5rem serif !important;
+    font: bold 1.5rem serif !important; /* Define a fonte */
 }
 
-/*Calcular*/
+/* Estiliza o botão */
 button {
-    width: 200px !important;
-    height: 50px;
-    font: bold 1.2rem serif !important;
-    background: white !important;
-    color: #000 !important;
-    outline: none;
-    border-radius: 10px !important;
-    cursor: pointer !important;
-    border: none !important;
-    display: block !important;  /* Garante que o botão ocupe um bloco inteiro */
-    margin: 0 auto !important;  /* Centraliza horizontalmente dentro do container */
-    text-align: center !important;
+    width: 200px !important; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font: bold 1.2rem serif !important; /* Define a fonte */
+    background: white !important; /* Cor de fundo do botão */
+    color: #000 !important; /* Cor do texto */
+    outline: none; /* Remove o contorno */
+    border-radius: 10px !important; /* Bordas arredondadas */
+    cursor: pointer !important; /* Mostra o cursor de pointer quando sobre o botão */
+    border: none !important; /* Remove a borda */
+    display: block !important;  /* Faz o botão ocupar todo o espaço disponível */
+    margin: 0 auto !important;  /* Centraliza o botão horizontalmente */
+    text-align: center !important; /* Alinha o texto no centro */
 }
 
+/* Estiliza a área de resultado */
 .result {
     display: flex;
-    flex-direction: column !important; /* Empilha os elementos verticalmente */
+    flex-direction: column !important; /* Organiza os itens verticalmente */
     justify-content: center !important; /* Centraliza verticalmente */
     align-items: center !important; /* Centraliza horizontalmente */
-    width: 450px !important;   /* Aumentando um pouco o tamanho */
-    height: 300px !important; /* Melhorando o espaço */
-    border-radius: 10px !important;
-    font: italic 1.5rem serif !important;
-    background: #fff;
-    color: #000;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-    user-select: none !important;
-    gap: 10px !important; /* Espaço entre o texto e a imagem */
-    text-align: center !important;  /* Centraliza o texto */
+    width: 450px !important;   /* Largura do resultado */
+    height: 300px !important; /* Altura do resultado */
+    border-radius: 10px !important; /* Bordas arredondadas */
+    font: italic 1.5rem serif !important; /* Fonte itálica */
+    background: #fff; /* Cor de fundo */
+    color: #000; /* Cor do texto */
+    padding: 20px !important; /* Espaçamento interno */
+    box-sizing: border-box !important; /* Ajuste de caixa */
+    user-select: none !important; /* Impede a seleção de texto */
+    gap: 10px !important; /* Espaçamento entre o texto e a imagem */
+    text-align: center !important;  /* Alinha o texto no centro */
 }
 
-/* Estilizando a imagem dentro do resultado */
+/* Estiliza a imagem dentro do resultado */
 .result img {
-    display: none;  /* Oculta a imagem inicialmente */
-    width: 160px !important;  /* Define um tamanho adequado */
-    height: auto !important;  /* Mantém a proporção */
+    display: none;  /* Inicialmente oculta a imagem */
+    width: 160px !important;  /* Tamanho da imagem */
+    height: auto !important;  /* Mantém a proporção da imagem */
     margin-top: 10px !important; /* Espaço acima da imagem */
-    border-radius: 20px !important;
-    object-fit: contain !important;  /* Ajusta a imagem dentro da área */
+    border-radius: 20px !important; /* Bordas arredondadas */
+    object-fit: contain !important;  /* Ajusta a imagem mantendo sua proporção */
 }
 
+/* Estiliza o rodapé */
 footer {
-    background-color: #2BCDDF;
-    color: black;
-    text-align: center !important;
-    padding: 1em !important;
-    font: bold 1.3rem serif !important;
+    background-color: #2BCDDF; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    text-align: center !important; /* Alinha o texto no centro */
+    padding: 1em !important; /* Espaçamento interno */
+    font: bold 1.3rem serif !important; /* Fonte do texto */
 }
 
-/* Responsividade */
+/* Responsividade para dispositivos móveis */
 @media (min-width: 200px) and (max-width: 768px) {
     * {
         margin: 0;
@@ -137,60 +139,60 @@ footer {
     }
 
     .title {
-        font-size: 1rem !important;
-        width: 300px !important;
+        font-size: 1rem !important; /* Ajusta o tamanho da fonte */
+        width: 300px !important; /* Ajusta a largura */
     }
 
     .clickable-image {
-        width: 50px !important;
-        height: 60px !important;
+        width: 50px !important; /* Ajusta o tamanho da imagem */
+        height: 60px !important; /* Ajusta o tamanho da imagem */
     }
 
     .container {
-        width: 300px !important;
-        height: 690px !important;
-        left: 380px !important;
+        width: 300px !important; /* Ajusta a largura */
+        height: 690px !important; /* Ajusta a altura */
+        left: 380px !important; /* Ajusta a posição */
     }
 
     .input label {
-        font-size: 0.9rem !important;
+        font-size: 0.9rem !important; /* Ajusta o tamanho da fonte */
     }
 
     .input {
-        width: 280px !important;
-        height: 20px !important;
-        justify-content: space-between !important;
-        align-items: center !important;
+        width: 280px !important; /* Ajusta a largura */
+        height: 20px !important; /* Ajusta a altura */
+        justify-content: space-between !important; /* Ajusta o espaçamento */
+        align-items: center !important; /* Alinha os itens */
     }
+
     .input input {
-        width: 230px !important;
-        height: 30px !important;
-        font: bold 0.9rem serif !important;
-        text-align: center !important;
+        width: 230px !important; /* Ajusta a largura */
+        height: 30px !important; /* Ajusta a altura */
+        font: bold 0.9rem serif !important; /* Ajusta o tamanho da fonte */
+        text-align: center !important; /* Alinha o texto */
     }
 
     button {
-        width: 100px !important;
-        height: 30px;
-        font: bold 0.8rem serif !important;
+        width: 100px !important; /* Ajusta a largura */
+        height: 30px; /* Ajusta a altura */
+        font: bold 0.8rem serif !important; /* Ajusta o tamanho da fonte */
     }
 
     .result {
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        width: 220px !important;
-        height: 240px !important;
-        border-radius: 10px !important;
-        font: italic 0.8rem serif !important;
-        padding: 20px !important;
-
-        user-select: none !important;
-        gap: 10px !important;
-        text-align: center !important;
+        flex-direction: column !important; /* Organiza verticalmente */
+        justify-content: center !important; /* Centraliza verticalmente */
+        align-items: center !important; /* Centraliza horizontalmente */
+        width: 220px !important; /* Ajusta a largura */
+        height: 240px !important; /* Ajusta a altura */
+        border-radius: 10px !important; /* Bordas arredondadas */
+        font: italic 0.8rem serif !important; /* Ajusta a fonte */
+        padding: 20px !important; /* Espaçamento interno */
+        user-select: none !important; /* Impede seleção */
+        gap: 10px !important; /* Espaçamento entre elementos */
+        text-align: center !important; /* Alinha o texto no centro */
     }
 
     footer {
-        font-size: 0.9rem !important;
+        font-size: 0.9rem !important; /* Ajusta o tamanho da fonte */
     }
 }
