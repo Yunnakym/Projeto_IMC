@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;  /* Centraliza horizontalmente */
+    justify-content: center;  /* Centraliza verticalmente */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #3DC4D3;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-bottom: 10em !important;
+}
+
+.title {
+    background-color: rgb(255, 198, 0);
+    width: 600px !important;
+    height: 50px !important;
+    text-align: center;
+    font: bold 1.5rem serif;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 50px;  /* Espaço entre as imagens */
+    margin-top: 60px;
+}
+
+.clickable-image {
+    width: 100px; /* tamanho da imagem */
+    height: 120px;
+    object-fit: cover;/* Mantém a imagem ajustada dentro do círculo */
+    border-radius: 50%; /* Torna a imagem circular */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 5px solid transparent;  /* Definição inicial da borda */
+}
+
+ /* Efeito de zoom */
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+.mulher {
+    background-color: #F0A5E0;
+}
+
+.homem {
+    background-color: #9ADAF5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 198, 0) !important;
+    width: 570px !important;
+    height: 700px !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;   /* Garante espaçamento uniforme */
+    border-radius: 20px !important;
+    margin-top: 50px !important;
+    padding: 20px !important; /* Adiciona um pequeno espaço interno */
+}
+
+.input {
+    display: flex;
+    width: 450px !important;
+    height: 50px !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.input input {
+    width: 360px !important;
+    height: 50px !important;
+    border-radius: 9px !important;
+    border: none;
+    outline: 0;
+    font: bold 1.5rem serif !important;
+    text-align: center !important;
+}
+
+.input label {
+    font: bold 1.5rem serif !important;
+}
+
+/*Calcular*/
+button {
+    width: 200px !important;
+    height: 50px;
+    font: bold 1.2rem serif !important;
+    background: white !important;
+    color: #000 !important;
+    outline: none;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    border: none !important;
+    display: block !important;  /* Garante que o botão ocupe um bloco inteiro */
+    margin: 0 auto !important;  /* Centraliza horizontalmente dentro do container */
+    text-align: center !important;
+}
+
+.result {
+    display: flex;
+    flex-direction: column !important; /* Empilha os elementos verticalmente */
+    justify-content: center !important; /* Centraliza verticalmente */
+    align-items: center !important; /* Centraliza horizontalmente */
+    width: 450px !important;   /* Aumentando um pouco o tamanho */
+    height: 300px !important; /* Melhorando o espaço */
+    border-radius: 10px !important;
+    font: italic 1.5rem serif !important;
+    background: #fff;
+    color: #000;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    user-select: none !important;
+    gap: 10px !important; /* Espaço entre o texto e a imagem */
+    text-align: center !important;  /* Centraliza o texto */
+}
+
+/* Estilizando a imagem dentro do resultado */
+.result img {
+    display: none;  /* Oculta a imagem inicialmente */
+    width: 160px !important;  /* Define um tamanho adequado */
+    height: auto !important;  /* Mantém a proporção */
+    margin-top: 10px !important; /* Espaço acima da imagem */
+    border-radius: 20px !important;
+    object-fit: contain !important;  /* Ajusta a imagem dentro da área */
+}
+
+footer {
+    background-color: #2BCDDF;
+    color: black;
+    text-align: center !important;
+    padding: 1em !important;
+    font: bold 1.3rem serif !important;
+}
+
+/* Responsividade */
+@media (min-width: 200px) and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 1rem !important;
+        width: 300px !important;
+    }
+
+    .clickable-image {
+        width: 40px !important;
+        height: 50px !important;
+    }
+
+    .container {
+        width: 300px !important;
+        height: 690px !important;
+        left: 380px !important;
+    }
+
+    .input label {
+        font-size: 0.9rem !important;
+    }
+
+    .input {
+        width: 280px !important;
+        height: 20px !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    .input input {
+        width: 230px !important;
+        height: 30px !important;
+        font: bold 0.9rem serif !important;
+        text-align: center !important;
+    }
+
+    button {
+        width: 100px !important;
+        height: 30px;
+        font: bold 0.8rem serif !important;
+    }
+
+    .result {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 220px !important;
+        height: 240px !important;
+        border-radius: 10px !important;
+        font: italic 0.8rem serif !important;
+        padding: 20px !important;
+
+        user-select: none !important;
+        gap: 10px !important;
+        text-align: center !important;
+    }
+
+    footer {
+        font-size: 0.9rem !important;
+    }
+}
