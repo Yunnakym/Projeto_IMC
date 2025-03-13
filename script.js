@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const peso = parseFloat(document.getElementById('peso').value);
         const resultadoTexto = document.getElementById('resultado-texto');
         const resultadoImagem = document.getElementById('resultado-imagem');
+    
 
         if (nome !== '' && !isNaN(altura) && !isNaN(peso) && altura > 0 && peso > 0) {
             const valorIMC = (peso / (altura * altura)).toFixed(1);
