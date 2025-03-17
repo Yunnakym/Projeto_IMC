@@ -8,8 +8,15 @@
 main {
     display: flex; /* Torna os elementos dentro de main flexíveis, permitindo distribuição dinâmica */
     flex-direction: column; /* Organiza os elementos verticalmente */
+<<<<<<< HEAD
     align-items: center;   /*Centraliza os itens horizontalmente */
     justify-content: center;  /* Centraliza os itens verticalmente */
+=======
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    justify-content: center;  /* Centraliza os itens verticalmente */
+    width: 100%; /* Largura total da tela */
+    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da tela */
+>>>>>>> b5928690c4274e9c379b9ce9fcaacfa1fb1d9f4a
     background-color: #7bd9e4; /* Cor de fundo */
     padding: 20px; /* Espaçamento interno */
     box-sizing: border-box; /* Altera o cálculo de largura e altura para incluir padding e border */
@@ -21,23 +28,40 @@ main {
     background-color: rgb(255, 198, 0); /* Cor de fundo amarela */
     width: 600px !important; /* Largura fixa */
     height: 50px !important; /* Altura fixa */
+<<<<<<< HEAD
     text-align: center !important; /* Alinha o texto no centro */
     font: bold 1.5rem serif; /* Define a fonte */
     display: flex !important; /* Usado para centralizar o texto dentro da caixa */
     margin-top: 30px; /* Espaço acima do título */
     align-items: center !important; /* Centraliza o texto verticalmente */
     justify-content: center !important; /* Centraliza o texto horizontalmente */
+=======
+    text-align: center; /* Alinha o texto no centro */
+    font: bold 1.5rem serif; /* Define a fonte */
+    display: flex; /* Usado para centralizar o texto dentro da caixa */
+    margin-top: 30px; /* Espaço acima do título */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+>>>>>>> b5928690c4274e9c379b9ce9fcaacfa1fb1d9f4a
     border-radius: 15px; /* Bordas arredondadas */
 }
 
 /* Estiliza o container das imagens */
 .images {
+<<<<<<< HEAD
    display: flex;
+=======
+    display: flex; /* Usa o Flexbox para alinhar as imagens */
+>>>>>>> b5928690c4274e9c379b9ce9fcaacfa1fb1d9f4a
     justify-content: center; /* Centraliza as imagens */
     margin-top: 60px; /* Espaço acima das imagens */
 }
 
+<<<<<<< HEAD
 /* Estiliza as imagem */
+=======
+/* Estiliza as imagens que são clicáveis */
+>>>>>>> b5928690c4274e9c379b9ce9fcaacfa1fb1d9f4a
 .clickable-image {
     width: 200px; /* Largura fixa */
     height: 250px; /* Altura fixa */
