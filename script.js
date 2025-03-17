@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Atualiza a imagem
             resultadoImagem.src = imgSrc;
-           // resultadoImagem.alt = classificacao;
             resultadoImagem.style.display = 'block'; // Mostra a imagem
 
         } else {
